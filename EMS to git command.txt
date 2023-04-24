@@ -1,0 +1,1161 @@
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code
+$ git clone https://github.com/snehalbhadane/EMS.git
+Cloning into 'EMS'...
+remote: Enumerating objects: 1374, done.
+remote: Counting objects: 100% (273/273), done.
+remote: Compressing objects: 100% (225/225), done.
+remote: Total 1374 (delta 54), reused 167 (delta 23), pack-reused 1101
+Receiving objects: 100% (1374/1374), 2.50 MiB | 9.19 MiB/s, done.
+Resolving deltas: 100% (451/451), done.
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code
+$ cd EMS
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (main)
+$ git switch EMS_UI
+Switched to a new branch 'EMS_UI'
+branch 'EMS_backend' set up to track 'origin/EMS_backend'.
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git init
+Reinitialized existing Git repository in C:/poc/Git_Code/EMS/.git/
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is up to date with 'origin/EMS_backend'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Competency-EMS-Project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git add .
+warning: adding embedded git repository: Competency-EMS-Project
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Competency-EMS-Project
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Competency-EMS-Project
+hint:
+hint: See "git help submodule" for more information.
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is up to date with 'origin/EMS_backend'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Competency-EMS-Project
+
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git commit -m"all integrated module "
+[EMS_backend dae6683] all integrated module
+ 1 file changed, 1 insertion(+)
+ create mode 160000 Competency-EMS-Project
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 96.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/snehalbhadane/EMS.git
+   40ca712..dae6683  EMS_backend -> EMS_backend
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is up to date with 'origin/EMS_backend'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Competency-EMS-Project
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .factorypath
+        .mvn/
+        .project
+        .settings/
+        EMS/
+        HELP.md
+        logs/
+        mvnw
+        mvnw.cmd
+        pom.xml
+        src/
+        target/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git add .
+warning: in the working copy of '.factorypath', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: adding embedded git repository: EMS
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> EMS
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached EMS
+hint:
+hint: See "git help submodule" for more information.
+warning: in the working copy of 'HELP.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'logs/application.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/yash/ems/CompetencyEmsProjectApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/test/java/com/yash/ems/CompetencyEmsProjectApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/META-INF/maven/com.yash.ems/Competency-EMS-Project/pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/application.properties', LF will be replaced by CRLF the next time Git touches it
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git commit -"All EMS Backend"
+error: unknown switch `A'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is up to date with 'origin/EMS_backend'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .classpath
+        new file:   .factorypath
+        new file:   .mvn/wrapper/maven-wrapper.jar
+        new file:   .mvn/wrapper/maven-wrapper.properties
+        new file:   .project
+        new file:   .settings/org.eclipse.core.resources.prefs
+        new file:   .settings/org.eclipse.jdt.apt.core.prefs
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   .settings/org.springframework.ide.eclipse.prefs
+        deleted:    Competency-EMS-Project
+        new file:   EMS
+        new file:   HELP.md
+        new file:   logs/application.log
+        new file:   logs/application.log.2023-03-16.0.gz
+        new file:   logs/application.log.2023-03-17.0.gz
+        new file:   logs/application.log.2023-03-18.0.gz
+        new file:   logs/application.log.2023-03-19.0.gz
+        new file:   logs/application.log.2023-03-20.0.gz
+        new file:   logs/application.log.2023-03-21.0.gz
+        new file:   logs/application.log.2023-03-22.0.gz
+        new file:   mvnw
+        new file:   mvnw.cmd
+        new file:   pom.xml
+        new file:   src/main/java/com/yash/ems/CompetencyEmsProjectApplication.java
+        new file:   src/main/java/com/yash/ems/config/JwtAuthenticationEntryPoint.java
+        new file:   src/main/java/com/yash/ems/config/JwtAuthenticationFilter.java
+        new file:   src/main/java/com/yash/ems/config/JwtUtils.java
+        new file:   src/main/java/com/yash/ems/config/LoggerConfiguration.java
+        new file:   src/main/java/com/yash/ems/config/MySecurityConfig.java
+        new file:   src/main/java/com/yash/ems/config/SwaggerConfiguration.java
+        new file:   src/main/java/com/yash/ems/controller/AuthenticateController.java
+        new file:   src/main/java/com/yash/ems/controller/EmployeeController.java
+        new file:   src/main/java/com/yash/ems/controller/EmployeeFeedbackController.java
+        new file:   src/main/java/com/yash/ems/controller/ReportController.java
+        new file:   src/main/java/com/yash/ems/controller/UserController.java
+        new file:   src/main/java/com/yash/ems/converter/UserReportDtoConverter.java
+        new file:   src/main/java/com/yash/ems/dto/SkillResponseDto.java
+        new file:   src/main/java/com/yash/ems/dto/UserReportDto.java
+        new file:   src/main/java/com/yash/ems/exception/GlobalExceptionHandler.java
+        new file:   src/main/java/com/yash/ems/exception/ResourceNotFoundException.java
+        new file:   src/main/java/com/yash/ems/exception/UserFoundException.java
+        new file:   src/main/java/com/yash/ems/exception/UserNotFoundException.java
+        new file:   src/main/java/com/yash/ems/model/Authority.java
+        new file:   src/main/java/com/yash/ems/model/Employee.java
+        new file:   src/main/java/com/yash/ems/model/EmployeeFeedback.java
+        new file:   src/main/java/com/yash/ems/model/EmployeeFeedbackFile.java
+        new file:   src/main/java/com/yash/ems/model/EmployeeFile.java
+        new file:   src/main/java/com/yash/ems/model/EmployeeSkillsRating.java
+        new file:   src/main/java/com/yash/ems/model/JwtRequest.java
+        new file:   src/main/java/com/yash/ems/model/JwtResponse.java
+        new file:   src/main/java/com/yash/ems/model/Role.java
+        new file:   src/main/java/com/yash/ems/model/Skill.java
+        new file:   src/main/java/com/yash/ems/model/User.java
+        new file:   src/main/java/com/yash/ems/model/UserRole.java
+        new file:   src/main/java/com/yash/ems/repo/EmployeeFeedbackFileRepository.java
+        new file:   src/main/java/com/yash/ems/repo/EmployeeFeedbackRepository.java
+        new file:   src/main/java/com/yash/ems/repo/EmployeeFileRepository.java
+        new file:   src/main/java/com/yash/ems/repo/EmployeeRepository.java
+        new file:   src/main/java/com/yash/ems/repo/RoleRepository.java
+        new file:   src/main/java/com/yash/ems/repo/SkillRepository.java
+        new file:   src/main/java/com/yash/ems/repo/UserRepository.java
+        new file:   src/main/java/com/yash/ems/service/impl/EmployeeService.java
+        new file:   src/main/java/com/yash/ems/service/impl/FeedbackServiceImpl.java
+        new file:   src/main/java/com/yash/ems/service/impl/ReportServiceImpl.java
+        new file:   src/main/java/com/yash/ems/service/impl/UserDetailsServiceImpl.java
+        new file:   src/main/java/com/yash/ems/service/impl/UserServiceImpl.java
+        new file:   src/main/java/com/yash/ems/services/FeedbackService.java
+        new file:   src/main/java/com/yash/ems/services/ReportService.java
+        new file:   src/main/java/com/yash/ems/services/UserService.java
+        new file:   src/main/resources/application.properties
+        new file:   src/test/java/com/yash/ems/CompetencyEmsProjectApplicationTests.java
+        new file:   src/test/java/com/yash/ems/CreateUserSinupTest.java
+        new file:   src/test/java/com/yash/ems/GetUserTestCaseLoginTest.java
+        new file:   src/test/java/com/yash/ems/controller/FeedbackControllerTests.java
+        new file:   src/test/java/com/yash/ems/service/impl/CreateOnboardModuleTest.java
+        new file:   src/test/java/com/yash/ems/service/impl/FeedbackServiceTests.java
+        new file:   src/test/java/com/yash/ems/service/impl/UserDetailsServiceImplTest.java
+        new file:   src/test/java/com/yash/ems/service/impl/UserServiceImplTest.java
+        new file:   target/classes/META-INF/MANIFEST.MF
+        new file:   target/classes/META-INF/maven/com.yash.ems/Competency-EMS-Project/pom.properties
+        new file:   target/classes/META-INF/maven/com.yash.ems/Competency-EMS-Project/pom.xml
+        new file:   target/classes/application.properties
+        new file:   target/classes/com/yash/ems/CompetencyEmsProjectApplication.class
+        new file:   target/classes/com/yash/ems/config/JwtAuthenticationEntryPoint.class
+        new file:   target/classes/com/yash/ems/config/JwtAuthenticationFilter.class
+        new file:   target/classes/com/yash/ems/config/JwtUtils.class
+        new file:   target/classes/com/yash/ems/config/LoggerConfiguration.class
+        new file:   target/classes/com/yash/ems/config/MySecurityConfig.class
+        new file:   target/classes/com/yash/ems/config/SwaggerConfiguration.class
+        new file:   target/classes/com/yash/ems/controller/AuthenticateController.class
+        new file:   target/classes/com/yash/ems/controller/EmployeeController.class
+        new file:   target/classes/com/yash/ems/controller/EmployeeFeedbackController.class
+        new file:   target/classes/com/yash/ems/controller/ReportController.class
+        new file:   target/classes/com/yash/ems/controller/UserController.class
+        new file:   target/classes/com/yash/ems/converter/UserReportDtoConverter.class
+        new file:   target/classes/com/yash/ems/dto/SkillResponseDto$SkillResponseDtoBuilder.class
+        new file:   target/classes/com/yash/ems/dto/SkillResponseDto.class
+        new file:   target/classes/com/yash/ems/dto/UserReportDto$UserReportDtoBuilder.class
+        new file:   target/classes/com/yash/ems/dto/UserReportDto.class
+        new file:   target/classes/com/yash/ems/exception/GlobalExceptionHandler.class
+        new file:   target/classes/com/yash/ems/exception/ResourceNotFoundException.class
+        new file:   target/classes/com/yash/ems/exception/UserFoundException.class
+        new file:   target/classes/com/yash/ems/exception/UserNotFoundException.class
+        new file:   target/classes/com/yash/ems/model/Authority.class
+        new file:   target/classes/com/yash/ems/model/Employee.class
+        new file:   target/classes/com/yash/ems/model/EmployeeFeedback.class
+        new file:   target/classes/com/yash/ems/model/EmployeeFeedbackFile.class
+        new file:   target/classes/com/yash/ems/model/EmployeeFile.class
+        new file:   target/classes/com/yash/ems/model/EmployeeSkillsRating.class
+        new file:   target/classes/com/yash/ems/model/JwtRequest.class
+        new file:   target/classes/com/yash/ems/model/JwtResponse.class
+        new file:   target/classes/com/yash/ems/model/Role.class
+        new file:   target/classes/com/yash/ems/model/Skill.class
+        new file:   target/classes/com/yash/ems/model/User$UserBuilder.class
+        new file:   target/classes/com/yash/ems/model/User.class
+        new file:   target/classes/com/yash/ems/model/UserRole.class
+        new file:   target/classes/com/yash/ems/repo/EmployeeFeedbackFileRepository.class
+        new file:   target/classes/com/yash/ems/repo/EmployeeFeedbackRepository.class
+        new file:   target/classes/com/yash/ems/repo/EmployeeFileRepository.class
+        new file:   target/classes/com/yash/ems/repo/EmployeeRepository.class
+        new file:   target/classes/com/yash/ems/repo/RoleRepository.class
+        new file:   target/classes/com/yash/ems/repo/SkillRepository.class
+        new file:   target/classes/com/yash/ems/repo/UserRepository.class
+        new file:   target/classes/com/yash/ems/service/impl/EmployeeService.class
+        new file:   target/classes/com/yash/ems/service/impl/FeedbackServiceImpl.class
+        new file:   target/classes/com/yash/ems/service/impl/ReportServiceImpl.class
+        new file:   target/classes/com/yash/ems/service/impl/UserDetailsServiceImpl.class
+        new file:   target/classes/com/yash/ems/service/impl/UserServiceImpl.class
+        new file:   target/classes/com/yash/ems/services/FeedbackService.class
+        new file:   target/classes/com/yash/ems/services/ReportService.class
+        new file:   target/classes/com/yash/ems/services/UserService.class
+        new file:   target/test-classes/com/yash/ems/CompetencyEmsProjectApplicationTests.class
+        new file:   target/test-classes/com/yash/ems/CreateUserSinupTest.class
+        new file:   target/test-classes/com/yash/ems/GetUserTestCaseLoginTest.class
+        new file:   target/test-classes/com/yash/ems/controller/FeedbackControllerTests.class
+        new file:   target/test-classes/com/yash/ems/service/impl/CreateOnboardModuleTest.class
+        new file:   target/test-classes/com/yash/ems/service/impl/FeedbackServiceTests.class
+        new file:   target/test-classes/com/yash/ems/service/impl/UserDetailsServiceImplTest.class
+        new file:   target/test-classes/com/yash/ems/service/impl/UserServiceImplTest.class
+
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git commit -m"EMS backend"
+[EMS_backend b0e6721] EMS backend
+ 139 files changed, 10657 insertions(+), 1 deletion(-)
+ create mode 100644 .classpath
+ create mode 100644 .factorypath
+ create mode 100644 .mvn/wrapper/maven-wrapper.jar
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.core.resources.prefs
+ create mode 100644 .settings/org.eclipse.jdt.apt.core.prefs
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .settings/org.springframework.ide.eclipse.prefs
+ delete mode 160000 Competency-EMS-Project
+ create mode 160000 EMS
+ create mode 100644 HELP.md
+ create mode 100644 logs/application.log
+ create mode 100644 logs/application.log.2023-03-16.0.gz
+ create mode 100644 logs/application.log.2023-03-17.0.gz
+ create mode 100644 logs/application.log.2023-03-18.0.gz
+ create mode 100644 logs/application.log.2023-03-19.0.gz
+ create mode 100644 logs/application.log.2023-03-20.0.gz
+ create mode 100644 logs/application.log.2023-03-21.0.gz
+ create mode 100644 logs/application.log.2023-03-22.0.gz
+ create mode 100644 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/yash/ems/CompetencyEmsProjectApplication.java
+ create mode 100644 src/main/java/com/yash/ems/config/JwtAuthenticationEntryPoint.java
+ create mode 100644 src/main/java/com/yash/ems/config/JwtAuthenticationFilter.java
+ create mode 100644 src/main/java/com/yash/ems/config/JwtUtils.java
+ create mode 100644 src/main/java/com/yash/ems/config/LoggerConfiguration.java
+ create mode 100644 src/main/java/com/yash/ems/config/MySecurityConfig.java
+ create mode 100644 src/main/java/com/yash/ems/config/SwaggerConfiguration.java
+ create mode 100644 src/main/java/com/yash/ems/controller/AuthenticateController.java
+ create mode 100644 src/main/java/com/yash/ems/controller/EmployeeController.java
+ create mode 100644 src/main/java/com/yash/ems/controller/EmployeeFeedbackController.java
+ create mode 100644 src/main/java/com/yash/ems/controller/ReportController.java
+ create mode 100644 src/main/java/com/yash/ems/controller/UserController.java
+ create mode 100644 src/main/java/com/yash/ems/converter/UserReportDtoConverter.java
+ create mode 100644 src/main/java/com/yash/ems/dto/SkillResponseDto.java
+ create mode 100644 src/main/java/com/yash/ems/dto/UserReportDto.java
+ create mode 100644 src/main/java/com/yash/ems/exception/GlobalExceptionHandler.java
+ create mode 100644 src/main/java/com/yash/ems/exception/ResourceNotFoundException.java
+ create mode 100644 src/main/java/com/yash/ems/exception/UserFoundException.java
+ create mode 100644 src/main/java/com/yash/ems/exception/UserNotFoundException.java
+ create mode 100644 src/main/java/com/yash/ems/model/Authority.java
+ create mode 100644 src/main/java/com/yash/ems/model/Employee.java
+ create mode 100644 src/main/java/com/yash/ems/model/EmployeeFeedback.java
+ create mode 100644 src/main/java/com/yash/ems/model/EmployeeFeedbackFile.java
+ create mode 100644 src/main/java/com/yash/ems/model/EmployeeFile.java
+ create mode 100644 src/main/java/com/yash/ems/model/EmployeeSkillsRating.java
+ create mode 100644 src/main/java/com/yash/ems/model/JwtRequest.java
+ create mode 100644 src/main/java/com/yash/ems/model/JwtResponse.java
+ create mode 100644 src/main/java/com/yash/ems/model/Role.java
+ create mode 100644 src/main/java/com/yash/ems/model/Skill.java
+ create mode 100644 src/main/java/com/yash/ems/model/User.java
+ create mode 100644 src/main/java/com/yash/ems/model/UserRole.java
+ create mode 100644 src/main/java/com/yash/ems/repo/EmployeeFeedbackFileRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/EmployeeFeedbackRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/EmployeeFileRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/EmployeeRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/RoleRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/SkillRepository.java
+ create mode 100644 src/main/java/com/yash/ems/repo/UserRepository.java
+ create mode 100644 src/main/java/com/yash/ems/service/impl/EmployeeService.java
+ create mode 100644 src/main/java/com/yash/ems/service/impl/FeedbackServiceImpl.java
+ create mode 100644 src/main/java/com/yash/ems/service/impl/ReportServiceImpl.java
+ create mode 100644 src/main/java/com/yash/ems/service/impl/UserDetailsServiceImpl.java
+ create mode 100644 src/main/java/com/yash/ems/service/impl/UserServiceImpl.java
+ create mode 100644 src/main/java/com/yash/ems/services/FeedbackService.java
+ create mode 100644 src/main/java/com/yash/ems/services/ReportService.java
+ create mode 100644 src/main/java/com/yash/ems/services/UserService.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/yash/ems/CompetencyEmsProjectApplicationTests.java
+ create mode 100644 src/test/java/com/yash/ems/CreateUserSinupTest.java
+ create mode 100644 src/test/java/com/yash/ems/GetUserTestCaseLoginTest.java
+ create mode 100644 src/test/java/com/yash/ems/controller/FeedbackControllerTests.java
+ create mode 100644 src/test/java/com/yash/ems/service/impl/CreateOnboardModuleTest.java
+ create mode 100644 src/test/java/com/yash/ems/service/impl/FeedbackServiceTests.java
+ create mode 100644 src/test/java/com/yash/ems/service/impl/UserDetailsServiceImplTest.java
+ create mode 100644 src/test/java/com/yash/ems/service/impl/UserServiceImplTest.java
+ create mode 100644 target/classes/META-INF/MANIFEST.MF
+ create mode 100644 target/classes/META-INF/maven/com.yash.ems/Competency-EMS-Project/pom.properties
+ create mode 100644 target/classes/META-INF/maven/com.yash.ems/Competency-EMS-Project/pom.xml
+ create mode 100644 target/classes/application.properties
+ create mode 100644 target/classes/com/yash/ems/CompetencyEmsProjectApplication.class
+ create mode 100644 target/classes/com/yash/ems/config/JwtAuthenticationEntryPoint.class
+ create mode 100644 target/classes/com/yash/ems/config/JwtAuthenticationFilter.class
+ create mode 100644 target/classes/com/yash/ems/config/JwtUtils.class
+ create mode 100644 target/classes/com/yash/ems/config/LoggerConfiguration.class
+ create mode 100644 target/classes/com/yash/ems/config/MySecurityConfig.class
+ create mode 100644 target/classes/com/yash/ems/config/SwaggerConfiguration.class
+ create mode 100644 target/classes/com/yash/ems/controller/AuthenticateController.class
+ create mode 100644 target/classes/com/yash/ems/controller/EmployeeController.class
+ create mode 100644 target/classes/com/yash/ems/controller/EmployeeFeedbackController.class
+ create mode 100644 target/classes/com/yash/ems/controller/ReportController.class
+ create mode 100644 target/classes/com/yash/ems/controller/UserController.class
+ create mode 100644 target/classes/com/yash/ems/converter/UserReportDtoConverter.class
+ create mode 100644 target/classes/com/yash/ems/dto/SkillResponseDto$SkillResponseDtoBuilder.class
+ create mode 100644 target/classes/com/yash/ems/dto/SkillResponseDto.class
+ create mode 100644 target/classes/com/yash/ems/dto/UserReportDto$UserReportDtoBuilder.class
+ create mode 100644 target/classes/com/yash/ems/dto/UserReportDto.class
+ create mode 100644 target/classes/com/yash/ems/exception/GlobalExceptionHandler.class
+ create mode 100644 target/classes/com/yash/ems/exception/ResourceNotFoundException.class
+ create mode 100644 target/classes/com/yash/ems/exception/UserFoundException.class
+ create mode 100644 target/classes/com/yash/ems/exception/UserNotFoundException.class
+ create mode 100644 target/classes/com/yash/ems/model/Authority.class
+ create mode 100644 target/classes/com/yash/ems/model/Employee.class
+ create mode 100644 target/classes/com/yash/ems/model/EmployeeFeedback.class
+ create mode 100644 target/classes/com/yash/ems/model/EmployeeFeedbackFile.class
+ create mode 100644 target/classes/com/yash/ems/model/EmployeeFile.class
+ create mode 100644 target/classes/com/yash/ems/model/EmployeeSkillsRating.class
+ create mode 100644 target/classes/com/yash/ems/model/JwtRequest.class
+ create mode 100644 target/classes/com/yash/ems/model/JwtResponse.class
+ create mode 100644 target/classes/com/yash/ems/model/Role.class
+ create mode 100644 target/classes/com/yash/ems/model/Skill.class
+ create mode 100644 target/classes/com/yash/ems/model/User$UserBuilder.class
+ create mode 100644 target/classes/com/yash/ems/model/User.class
+ create mode 100644 target/classes/com/yash/ems/model/UserRole.class
+ create mode 100644 target/classes/com/yash/ems/repo/EmployeeFeedbackFileRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/EmployeeFeedbackRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/EmployeeFileRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/EmployeeRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/RoleRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/SkillRepository.class
+ create mode 100644 target/classes/com/yash/ems/repo/UserRepository.class
+ create mode 100644 target/classes/com/yash/ems/service/impl/EmployeeService.class
+ create mode 100644 target/classes/com/yash/ems/service/impl/FeedbackServiceImpl.class
+ create mode 100644 target/classes/com/yash/ems/service/impl/ReportServiceImpl.class
+ create mode 100644 target/classes/com/yash/ems/service/impl/UserDetailsServiceImpl.class
+ create mode 100644 target/classes/com/yash/ems/service/impl/UserServiceImpl.class
+ create mode 100644 target/classes/com/yash/ems/services/FeedbackService.class
+ create mode 100644 target/classes/com/yash/ems/services/ReportService.class
+ create mode 100644 target/classes/com/yash/ems/services/UserService.class
+ create mode 100644 target/test-classes/com/yash/ems/CompetencyEmsProjectApplicationTests.class
+ create mode 100644 target/test-classes/com/yash/ems/CreateUserSinupTest.class
+ create mode 100644 target/test-classes/com/yash/ems/GetUserTestCaseLoginTest.class
+ create mode 100644 target/test-classes/com/yash/ems/controller/FeedbackControllerTests.class
+ create mode 100644 target/test-classes/com/yash/ems/service/impl/CreateOnboardModuleTest.class
+ create mode 100644 target/test-classes/com/yash/ems/service/impl/FeedbackServiceTests.class
+ create mode 100644 target/test-classes/com/yash/ems/service/impl/UserDetailsServiceImplTest.class
+ create mode 100644 target/test-classes/com/yash/ems/service/impl/UserServiceImplTest.class
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is ahead of 'origin/EMS_backend' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git push
+Enumerating objects: 193, done.
+Counting objects: 100% (193/193), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (171/171), done.
+Writing objects: 100% (192/192), 276.13 KiB | 1.56 MiB/s, done.
+Total 192 (delta 22), reused 14 (delta 2), pack-reused 0
+remote: Resolving deltas: 100% (22/22), done.
+To https://github.com/snehalbhadane/EMS.git
+   dae6683..b0e6721  EMS_backend -> EMS_backend
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git add .
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git status
+On branch EMS_backend
+Your branch is up to date with 'origin/EMS_backend'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    EMS
+
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git commit -m"deleted unwanted ems file"
+[EMS_backend 96c8412] deleted unwanted ems file
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 EMS
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 116.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/snehalbhadane/EMS.git
+   b0e6721..96c8412  EMS_backend -> EMS_backend
+
+prachi.kurhe@YPH1016778LT MINGW64 /c/poc/Git_Code/EMS (EMS_backend)
+$
+-------------------------------------------------------------------------------------------
+commands for UI
+-------------------------------------------------------
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI (Access-Management_Module)
+$ git clone https://github.com/snehalbhadane/EMS.git
+Cloning into 'EMS'...
+remote: Enumerating objects: 1554, done.
+remote: Counting objects: 100% (453/453), done.
+remote: Compressing objects: 100% (367/367), done.
+remote: Total 1554 (delta 103), reused 322 (delta 43), pack-reused 1101
+Receiving objects: 100% (1554/1554), 2.68 MiB | 16.63 MiB/s, done.
+Resolving deltas: 100% (500/500), done.
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI (Access-Management_Module)
+$ cd EMS
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (main)
+$ git switch EMS_UI
+Switched to a new branch 'EMS_UI'
+branch 'EMS_UI' set up to track 'origin/EMS_UI'.
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git init
+Reinitialized existing Git repository in D:/git/UI/EMS/.git/
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git status
+On branch EMS_UI
+Your branch is up to date with 'origin/EMS_UI'.
+
+nothing to commit, working tree clean
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git status
+On branch EMS_UI
+Your branch is up to date with 'origin/EMS_UI'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .browserslistrc
+        .editorconfig
+        .gitignore
+        angular.json
+        karma.conf.js
+        package-lock.json
+        package.json
+        src/
+        tsconfig.app.json
+        tsconfig.json
+        tsconfig.spec.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.browserslistrc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.editorconfig', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'angular.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'karma.conf.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/CommonComponets/navbar/navbar.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/CommonComponets/navbar/navbar.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/CommonComponets/navbar/navbar.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback/feedback.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback/feedback.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/feedback/feedback.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/createemployee/createemployee.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/createemployee/createemployee.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/createemployee/createemployee.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeelist/employeelist.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeelist/employeelist.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/employeelist/employeelist.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/fileupload/fileupload.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/fileupload/fileupload.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/fileupload/fileupload.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/onboard/onboard.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/onboard/onboard.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/onboard/onboard.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/search/search.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/search/search.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/search/search.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/report/report.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/report/report.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/ReportModule/report/report.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/feedback/feedback.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/feedback/feedback.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/feedback/feedback.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/home/home.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/home/home.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/home/home.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/login/login.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/login/login.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/login/login.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/onboard/onboard.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/onboard/onboard.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/onboard/onboard.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/report/report.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/report/report.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/report/report.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/signup/signup.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/signup/signup.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/signup/signup.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/createskill/createskill.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/createskill/createskill.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/createskill/createskill.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/skilllist/skilllist.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/skilllist/skilllist.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/skilllist/skilllist.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/updateskill/updateskill.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/updateskill/updateskill.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/PageComponets/skill/updateskill/updateskill.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/api-service.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/api-service.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/auth-interceptor.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/auth-interceptor.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/employee-feedback.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/employee-feedback.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/employee.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/employee.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/excelsheet.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/excelsheet.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/feeback.guard.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/feeback.guard.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/fileupload.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/fileupload.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/login-service.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/login-service.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/master.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/master.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/onboard.guard.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/onboard.guard.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/skills.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/skills.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/user-service.service.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/Services/user-service.service.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app-routing.module.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app.component.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app.component.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app.component.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app.module.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-feedback-file.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-feedback-file.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-feedback.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-feedback.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-skills-rating.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-skills-rating.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee-skills.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/employee.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/feedback.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/feedback.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/fileupload.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/fileupload.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/login-data.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/login-data.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/skill.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/skill.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/skills.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/skills.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/user.spec.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/model/user.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/environments/environment.prod.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/environments/environment.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/polyfills.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/test.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.app.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.spec.json', LF will be replaced by CRLF the next time Git touches it
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git status
+On branch EMS_UI
+Your branch is up to date with 'origin/EMS_UI'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .browserslistrc
+        new file:   .editorconfig
+        new file:   .gitignore
+        modified:   README.md
+        new file:   angular.json
+        new file:   karma.conf.js
+        new file:   package-lock.json
+        new file:   package.json
+        new file:   src/app/CommonComponets/navbar/navbar.component.css
+        new file:   src/app/CommonComponets/navbar/navbar.component.html
+        new file:   src/app/CommonComponets/navbar/navbar.component.spec.ts
+        new file:   src/app/CommonComponets/navbar/navbar.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.css
+        new file:   src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.html
+        new file:   src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.css
+        new file:   src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.html
+        new file:   src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.css
+        new file:   src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.html
+        new file:   src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/feedback/feedback.component.css
+        new file:   src/app/PageComponets/FeedbackModule/feedback/feedback.component.html
+        new file:   src/app/PageComponets/FeedbackModule/feedback/feedback.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/feedback/feedback.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.css
+        new file:   src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.html
+        new file:   src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.ts
+        new file:   src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.css
+        new file:   src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.html
+        new file:   src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.spec.ts
+        new file:   src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.ts
+        new file:   src/app/PageComponets/OnboardModule/createemployee/createemployee.component.css
+        new file:   src/app/PageComponets/OnboardModule/createemployee/createemployee.component.html
+        new file:   src/app/PageComponets/OnboardModule/createemployee/createemployee.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/createemployee/createemployee.component.ts
+        new file:   src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.css
+        new file:   src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.html
+        new file:   src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.ts
+        new file:   src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.css
+        new file:   src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.html
+        new file:   src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.ts
+        new file:   src/app/PageComponets/OnboardModule/employeelist/employeelist.component.css
+        new file:   src/app/PageComponets/OnboardModule/employeelist/employeelist.component.html
+        new file:   src/app/PageComponets/OnboardModule/employeelist/employeelist.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/employeelist/employeelist.component.ts
+        new file:   src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.css
+        new file:   src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.html
+        new file:   src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.ts
+        new file:   src/app/PageComponets/OnboardModule/fileupload/fileupload.component.css
+        new file:   src/app/PageComponets/OnboardModule/fileupload/fileupload.component.html
+        new file:   src/app/PageComponets/OnboardModule/fileupload/fileupload.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/fileupload/fileupload.component.ts
+        new file:   src/app/PageComponets/OnboardModule/onboard/onboard.component.css
+        new file:   src/app/PageComponets/OnboardModule/onboard/onboard.component.html
+        new file:   src/app/PageComponets/OnboardModule/onboard/onboard.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/onboard/onboard.component.ts
+        new file:   src/app/PageComponets/OnboardModule/search/search.component.css
+        new file:   src/app/PageComponets/OnboardModule/search/search.component.html
+        new file:   src/app/PageComponets/OnboardModule/search/search.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/search/search.component.ts
+        new file:   src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.css
+        new file:   src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.html
+        new file:   src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.spec.ts
+        new file:   src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.ts
+        new file:   src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.css
+        new file:   src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.html
+        new file:   src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.spec.ts
+        new file:   src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.ts
+        new file:   src/app/PageComponets/ReportModule/report/report.component.css
+        new file:   src/app/PageComponets/ReportModule/report/report.component.html
+        new file:   src/app/PageComponets/ReportModule/report/report.component.spec.ts
+        new file:   src/app/PageComponets/ReportModule/report/report.component.ts
+        new file:   src/app/PageComponets/feedback/feedback.component.css
+        new file:   src/app/PageComponets/feedback/feedback.component.html
+        new file:   src/app/PageComponets/feedback/feedback.component.spec.ts
+        new file:   src/app/PageComponets/feedback/feedback.component.ts
+        new file:   src/app/PageComponets/home/home.component.css
+        new file:   src/app/PageComponets/home/home.component.html
+        new file:   src/app/PageComponets/home/home.component.spec.ts
+        new file:   src/app/PageComponets/home/home.component.ts
+        new file:   src/app/PageComponets/login/login.component.css
+        new file:   src/app/PageComponets/login/login.component.html
+        new file:   src/app/PageComponets/login/login.component.spec.ts
+        new file:   src/app/PageComponets/login/login.component.ts
+        new file:   src/app/PageComponets/onboard/onboard.component.css
+        new file:   src/app/PageComponets/onboard/onboard.component.html
+        new file:   src/app/PageComponets/onboard/onboard.component.spec.ts
+        new file:   src/app/PageComponets/onboard/onboard.component.ts
+        new file:   src/app/PageComponets/report/report.component.css
+        new file:   src/app/PageComponets/report/report.component.html
+        new file:   src/app/PageComponets/report/report.component.spec.ts
+        new file:   src/app/PageComponets/report/report.component.ts
+        new file:   src/app/PageComponets/signup/signup.component.css
+        new file:   src/app/PageComponets/signup/signup.component.html
+        new file:   src/app/PageComponets/signup/signup.component.spec.ts
+        new file:   src/app/PageComponets/signup/signup.component.ts
+        new file:   src/app/PageComponets/skill/createskill/createskill.component.css
+        new file:   src/app/PageComponets/skill/createskill/createskill.component.html
+        new file:   src/app/PageComponets/skill/createskill/createskill.component.spec.ts
+        new file:   src/app/PageComponets/skill/createskill/createskill.component.ts
+        new file:   src/app/PageComponets/skill/skilllist/skilllist.component.css
+        new file:   src/app/PageComponets/skill/skilllist/skilllist.component.html
+        new file:   src/app/PageComponets/skill/skilllist/skilllist.component.spec.ts
+        new file:   src/app/PageComponets/skill/skilllist/skilllist.component.ts
+        new file:   src/app/PageComponets/skill/updateskill/updateskill.component.css
+        new file:   src/app/PageComponets/skill/updateskill/updateskill.component.html
+        new file:   src/app/PageComponets/skill/updateskill/updateskill.component.spec.ts
+        new file:   src/app/PageComponets/skill/updateskill/updateskill.component.ts
+        new file:   src/app/Services/api-service.service.spec.ts
+        new file:   src/app/Services/api-service.service.ts
+        new file:   src/app/Services/auth-interceptor.spec.ts
+        new file:   src/app/Services/auth-interceptor.ts
+        new file:   src/app/Services/employee-feedback.service.spec.ts
+        new file:   src/app/Services/employee-feedback.service.ts
+        new file:   src/app/Services/employee.service.spec.ts
+        new file:   src/app/Services/employee.service.ts
+        new file:   src/app/Services/excelsheet.service.spec.ts
+        new file:   src/app/Services/excelsheet.service.ts
+        new file:   src/app/Services/feeback.guard.spec.ts
+        new file:   src/app/Services/feeback.guard.ts
+        new file:   src/app/Services/fileupload.service.spec.ts
+        new file:   src/app/Services/fileupload.service.ts
+        new file:   src/app/Services/helper.ts
+        new file:   src/app/Services/login-service.service.spec.ts
+        new file:   src/app/Services/login-service.service.ts
+        new file:   src/app/Services/master.service.spec.ts
+        new file:   src/app/Services/master.service.ts
+        new file:   src/app/Services/onboard.guard.spec.ts
+        new file:   src/app/Services/onboard.guard.ts
+        new file:   src/app/Services/skills.service.spec.ts
+        new file:   src/app/Services/skills.service.ts
+        new file:   src/app/Services/user-service.service.spec.ts
+        new file:   src/app/Services/user-service.service.ts
+        new file:   src/app/app-routing.module.ts
+        new file:   src/app/app.component.css
+        new file:   src/app/app.component.html
+        new file:   src/app/app.component.spec.ts
+        new file:   src/app/app.component.ts
+        new file:   src/app/app.module.ts
+        new file:   src/app/model/ReportFeedback.ts
+        new file:   src/app/model/ReportFeedbackSkill.ts
+        new file:   src/app/model/ReportSkillRating.ts
+        new file:   src/app/model/employee-feedback-file.spec.ts
+        new file:   src/app/model/employee-feedback-file.ts
+        new file:   src/app/model/employee-feedback.spec.ts
+        new file:   src/app/model/employee-feedback.ts
+        new file:   src/app/model/employee-skills-rating.spec.ts
+        new file:   src/app/model/employee-skills-rating.ts
+        new file:   src/app/model/employee-skills.spec.ts
+        new file:   src/app/model/employee.spec.ts
+        new file:   src/app/model/employee.ts
+        new file:   src/app/model/environment.ts
+        new file:   src/app/model/feedback.spec.ts
+        new file:   src/app/model/feedback.ts
+        new file:   src/app/model/fileupload.spec.ts
+        new file:   src/app/model/fileupload.ts
+        new file:   src/app/model/login-data.spec.ts
+        new file:   src/app/model/login-data.ts
+        new file:   src/app/model/loginData.ts
+        new file:   src/app/model/skill.spec.ts
+        new file:   src/app/model/skill.ts
+        new file:   src/app/model/skills.spec.ts
+        new file:   src/app/model/skills.ts
+        new file:   src/app/model/user.spec.ts
+        new file:   src/app/model/user.ts
+        new file:   src/assets/.gitkeep
+        new file:   src/assets/yash-logo.png
+        new file:   src/assets/yash1.jpg
+        new file:   src/environments/environment.prod.ts
+        new file:   src/environments/environment.ts
+        new file:   src/favicon.ico
+        new file:   src/index.html
+        new file:   src/main.ts
+        new file:   src/material-module.ts
+        new file:   src/polyfills.ts
+        new file:   src/styles.css
+        new file:   src/test.ts
+        new file:   tsconfig.app.json
+        new file:   tsconfig.json
+        new file:   tsconfig.spec.json
+
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git commit -m"all integrated module first commit"
+[EMS_UI 24d9d3b] all integrated module first commit
+ Committer: Shubham Girish Bhake <shubham.bhake@Yash.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 188 files changed, 26707 insertions(+), 2 deletions(-)
+ create mode 100644 .browserslistrc
+ create mode 100644 .editorconfig
+ create mode 100644 .gitignore
+ create mode 100644 angular.json
+ create mode 100644 karma.conf.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/app/CommonComponets/navbar/navbar.component.css
+ create mode 100644 src/app/CommonComponets/navbar/navbar.component.html
+ create mode 100644 src/app/CommonComponets/navbar/navbar.component.spec.ts
+ create mode 100644 src/app/CommonComponets/navbar/navbar.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/add-feedback/add-feedback.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/dashboard/dashboard.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback-list/feedback-list.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback/feedback.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback/feedback.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback/feedback.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/feedback/feedback.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/menu-component/menu-component.component.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.css
+ create mode 100644 src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.html
+ create mode 100644 src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.spec.ts
+ create mode 100644 src/app/PageComponets/FeedbackModule/upload-feedback/upload-feedback.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/createemployee/createemployee.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/createemployee/createemployee.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/createemployee/createemployee.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/createemployee/createemployee.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/deleteemployee/deleteemployee.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/employeedetails/employeedetails.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/employeelist/employeelist.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/employeelist/employeelist.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/employeelist/employeelist.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/employeelist/employeelist.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/excelsheet/excelsheet.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/fileupload/fileupload.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/fileupload/fileupload.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/fileupload/fileupload.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/fileupload/fileupload.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/onboard/onboard.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/onboard/onboard.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/onboard/onboard.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/onboard/onboard.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/search/search.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/search/search.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/search/search.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/search/search.component.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.css
+ create mode 100644 src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.html
+ create mode 100644 src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.spec.ts
+ create mode 100644 src/app/PageComponets/OnboardModule/updateemployee/updateemployee.component.ts
+ create mode 100644 src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.css
+ create mode 100644 src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.html
+ create mode 100644 src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.spec.ts
+ create mode 100644 src/app/PageComponets/ReportModule/bar-chart/bar-chart.component.ts
+ create mode 100644 src/app/PageComponets/ReportModule/report/report.component.css
+ create mode 100644 src/app/PageComponets/ReportModule/report/report.component.html
+ create mode 100644 src/app/PageComponets/ReportModule/report/report.component.spec.ts
+ create mode 100644 src/app/PageComponets/ReportModule/report/report.component.ts
+ create mode 100644 src/app/PageComponets/feedback/feedback.component.css
+ create mode 100644 src/app/PageComponets/feedback/feedback.component.html
+ create mode 100644 src/app/PageComponets/feedback/feedback.component.spec.ts
+ create mode 100644 src/app/PageComponets/feedback/feedback.component.ts
+ create mode 100644 src/app/PageComponets/home/home.component.css
+ create mode 100644 src/app/PageComponets/home/home.component.html
+ create mode 100644 src/app/PageComponets/home/home.component.spec.ts
+ create mode 100644 src/app/PageComponets/home/home.component.ts
+ create mode 100644 src/app/PageComponets/login/login.component.css
+ create mode 100644 src/app/PageComponets/login/login.component.html
+ create mode 100644 src/app/PageComponets/login/login.component.spec.ts
+ create mode 100644 src/app/PageComponets/login/login.component.ts
+ create mode 100644 src/app/PageComponets/onboard/onboard.component.css
+ create mode 100644 src/app/PageComponets/onboard/onboard.component.html
+ create mode 100644 src/app/PageComponets/onboard/onboard.component.spec.ts
+ create mode 100644 src/app/PageComponets/onboard/onboard.component.ts
+ create mode 100644 src/app/PageComponets/report/report.component.css
+ create mode 100644 src/app/PageComponets/report/report.component.html
+ create mode 100644 src/app/PageComponets/report/report.component.spec.ts
+ create mode 100644 src/app/PageComponets/report/report.component.ts
+ create mode 100644 src/app/PageComponets/signup/signup.component.css
+ create mode 100644 src/app/PageComponets/signup/signup.component.html
+ create mode 100644 src/app/PageComponets/signup/signup.component.spec.ts
+ create mode 100644 src/app/PageComponets/signup/signup.component.ts
+ create mode 100644 src/app/PageComponets/skill/createskill/createskill.component.css
+ create mode 100644 src/app/PageComponets/skill/createskill/createskill.component.html
+ create mode 100644 src/app/PageComponets/skill/createskill/createskill.component.spec.ts
+ create mode 100644 src/app/PageComponets/skill/createskill/createskill.component.ts
+ create mode 100644 src/app/PageComponets/skill/skilllist/skilllist.component.css
+ create mode 100644 src/app/PageComponets/skill/skilllist/skilllist.component.html
+ create mode 100644 src/app/PageComponets/skill/skilllist/skilllist.component.spec.ts
+ create mode 100644 src/app/PageComponets/skill/skilllist/skilllist.component.ts
+ create mode 100644 src/app/PageComponets/skill/updateskill/updateskill.component.css
+ create mode 100644 src/app/PageComponets/skill/updateskill/updateskill.component.html
+ create mode 100644 src/app/PageComponets/skill/updateskill/updateskill.component.spec.ts
+ create mode 100644 src/app/PageComponets/skill/updateskill/updateskill.component.ts
+ create mode 100644 src/app/Services/api-service.service.spec.ts
+ create mode 100644 src/app/Services/api-service.service.ts
+ create mode 100644 src/app/Services/auth-interceptor.spec.ts
+ create mode 100644 src/app/Services/auth-interceptor.ts
+ create mode 100644 src/app/Services/employee-feedback.service.spec.ts
+ create mode 100644 src/app/Services/employee-feedback.service.ts
+ create mode 100644 src/app/Services/employee.service.spec.ts
+ create mode 100644 src/app/Services/employee.service.ts
+ create mode 100644 src/app/Services/excelsheet.service.spec.ts
+ create mode 100644 src/app/Services/excelsheet.service.ts
+ create mode 100644 src/app/Services/feeback.guard.spec.ts
+ create mode 100644 src/app/Services/feeback.guard.ts
+ create mode 100644 src/app/Services/fileupload.service.spec.ts
+ create mode 100644 src/app/Services/fileupload.service.ts
+ create mode 100644 src/app/Services/helper.ts
+ create mode 100644 src/app/Services/login-service.service.spec.ts
+ create mode 100644 src/app/Services/login-service.service.ts
+ create mode 100644 src/app/Services/master.service.spec.ts
+ create mode 100644 src/app/Services/master.service.ts
+ create mode 100644 src/app/Services/onboard.guard.spec.ts
+ create mode 100644 src/app/Services/onboard.guard.ts
+ create mode 100644 src/app/Services/skills.service.spec.ts
+ create mode 100644 src/app/Services/skills.service.ts
+ create mode 100644 src/app/Services/user-service.service.spec.ts
+ create mode 100644 src/app/Services/user-service.service.ts
+ create mode 100644 src/app/app-routing.module.ts
+ create mode 100644 src/app/app.component.css
+ create mode 100644 src/app/app.component.html
+ create mode 100644 src/app/app.component.spec.ts
+ create mode 100644 src/app/app.component.ts
+ create mode 100644 src/app/app.module.ts
+ create mode 100644 src/app/model/ReportFeedback.ts
+ create mode 100644 src/app/model/ReportFeedbackSkill.ts
+ create mode 100644 src/app/model/ReportSkillRating.ts
+ create mode 100644 src/app/model/employee-feedback-file.spec.ts
+ create mode 100644 src/app/model/employee-feedback-file.ts
+ create mode 100644 src/app/model/employee-feedback.spec.ts
+ create mode 100644 src/app/model/employee-feedback.ts
+ create mode 100644 src/app/model/employee-skills-rating.spec.ts
+ create mode 100644 src/app/model/employee-skills-rating.ts
+ create mode 100644 src/app/model/employee-skills.spec.ts
+ create mode 100644 src/app/model/employee.spec.ts
+ create mode 100644 src/app/model/employee.ts
+ create mode 100644 src/app/model/environment.ts
+ create mode 100644 src/app/model/feedback.spec.ts
+ create mode 100644 src/app/model/feedback.ts
+ create mode 100644 src/app/model/fileupload.spec.ts
+ create mode 100644 src/app/model/fileupload.ts
+ create mode 100644 src/app/model/login-data.spec.ts
+ create mode 100644 src/app/model/login-data.ts
+ create mode 100644 src/app/model/loginData.ts
+ create mode 100644 src/app/model/skill.spec.ts
+ create mode 100644 src/app/model/skill.ts
+ create mode 100644 src/app/model/skills.spec.ts
+ create mode 100644 src/app/model/skills.ts
+ create mode 100644 src/app/model/user.spec.ts
+ create mode 100644 src/app/model/user.ts
+ create mode 100644 src/assets/.gitkeep
+ create mode 100644 src/assets/yash-logo.png
+ create mode 100644 src/assets/yash1.jpg
+ create mode 100644 src/environments/environment.prod.ts
+ create mode 100644 src/environments/environment.ts
+ create mode 100644 src/favicon.ico
+ create mode 100644 src/index.html
+ create mode 100644 src/main.ts
+ create mode 100644 src/material-module.ts
+ create mode 100644 src/polyfills.ts
+ create mode 100644 src/styles.css
+ create mode 100644 src/test.ts
+ create mode 100644 tsconfig.app.json
+ create mode 100644 tsconfig.json
+ create mode 100644 tsconfig.spec.json
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+$ git push
+Enumerating objects: 216, done.
+Counting objects: 100% (216/216), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (199/199), done.
+Writing objects: 100% (214/214), 425.66 KiB | 1.48 MiB/s, done.
+Total 214 (delta 56), reused 23 (delta 5), pack-reused 0
+remote: Resolving deltas: 100% (56/56), done.
+To https://github.com/snehalbhadane/EMS.git
+   40ca712..24d9d3b  EMS_UI -> EMS_UI
+
+shubham.bhake@YPH1016146LT MINGW64 /d/git/UI/EMS (EMS_UI)
+
